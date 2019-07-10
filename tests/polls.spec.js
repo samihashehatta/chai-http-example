@@ -9,7 +9,7 @@ var request = chai.request(config.baseUrl);
 
 describe('/polls', function () {
 	var pollId;
-	it('GET list of polls', function (done) {
+	it('GET list of polls and all polls', function (done) {
 		request
 			.get('/polls')
 			.res( function (res) {
